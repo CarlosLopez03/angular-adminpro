@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styles: [],
 })
 export class Graphic1Component {
-  public labels1: string[] = ['Tacos', 'Cervezas', 'Whisky'];
-  public data1 = { datasets: [{ data: [999, 450, 777] }] };
+  public labels1 = ['Tacos', 'Cervezas', 'Whisky'];
+  public data1 = {
+    labels: this.labels1,
+    datasets: [{ data: [999, 450, 777] }],
+  };
 }
